@@ -42,13 +42,25 @@ public class Loops {
 		//Hint You can use the following String functions:
 		//lenght() -> returns the total number of characters of a given String
 		//chartAt(i) -> returns the character at the given position(i) of a String
-		String texto = "Jesus" ;
 		
-		for(int i = 0; i< texto.length(); i++) {
-			System.out.println(texto.charAt(i));
+		Scanner console = new Scanner(System.in);
+        String name;
+        System.out.print("Enter your name pal: ");
+        name = console.nextLine();
+        
+        System.out.println("let me spell that for you :"  );
+        for(int i = 0; i < name.length(); i++) {
+			System.out.println(name.charAt(i));
+		// TODO Auto-generated method stub
+		
+		}
+		
+	console.close();
+		
+
 		}
 	}
-}
+
 			/*
 			 * Part 2: Do While loops
 Create a new Java class with a main method(so you can run your code) called Fibonacci
